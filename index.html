@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Finance Tracker</h1>
+        
+        <div class="form">
+            <label for="income">Income ($):</label>
+            <input type="number" id="income" placeholder="Enter income">
+
+            <label for="expense">Expense ($):</label>
+            <input type="number" id="expense" placeholder="Enter expense">
+            
+            <button onclick="addEntry()">Add</button>
+        </div>
+
+        <h2>Summary</h2>
+        <p>Total Income: <span id="totalIncome">0</span></p>
+        <p>Total Expenses: <span id="totalExpenses">0</span></p>
+        <p>Savings: <span id="savings">0</span></p>
+
+        <canvas id="chart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
